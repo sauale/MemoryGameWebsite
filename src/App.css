@@ -1,4 +1,4 @@
-ul {
+.Header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -8,35 +8,150 @@ ul {
   top: 0px;
   left: 0px;
   width: 100%;
+  text-decoration: none;
 }
 
-li {
-  float: left;
+.Header li  {
+  color: white;
+  text-align: center;
+  text-decoration:none;
+  padding: 14px 16px;
+}
+.Header li a{
+  color: white;
+  text-decoration: none;
 }
 
-li a {
-  display: block;
+.Home ul{
+  padding: 20px;
+  overflow: hidden;
+}
+
+.Home li{
+  text-decoration: none;
+  display: inline;
+  margin: 100px;
+}
+
+.Home li a{
+  list-style-type: none;
+  padding: 20px 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.Game1{
+  padding: 100px;
+  top: 100px;
+}
+
+.active5{
+  padding: 20px;
+}
+
+.activenone{
+  display: none;
+}
+
+/*.Header li a, button {
+ /* display: outside;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
+*/
 
-li a:hover:not(.active, .active2) {
+/*.Header li a:hover:not(.active, .active2) {
   background-color: #111;
-}
+}*/
 
 .active {
   background-color: #4CAF50;
+  text-decoration: none;
 }
 .active2{
   background-color: darkgreen;
+  text-decoration: none;
 }
 
-.Header ul li:last-child{
-     float: right;
+.Header ul li:nth-child(1){
+  float: left;
+}
+
+.Header ul li:nth-child(2){
+float :left;
 }
 
 .Header ul li:nth-child(3){
-  float :right
+     float: right;
 }
+
+.Header ul li:nth-child(4){
+  float :right;
+}
+
+.square{
+ background: white;
+ border: 1px solid grey;
+ float: left;
+ margin-right: -1px;
+ margin-top: -1px;
+ padding: 0;
+ width: 80px;
+ height: 80px;
+ text-align: center;
+ font-size: 40px;
+ font-weight: bold;
+ line-height: 80px;
+}
+.square:focus{
+  outline: none;
+}
+.board-row:after{
+ clear: both;
+ content: "";
+ display: table;
+}
+
+.black-card {
+  color: #333;
+  background-color: #333;
+  height: 125px;
+  width: 125px;
+  border-radius: 10px; 
+}
+
+.white-card{
+  color:white;
+  background-color:white;
+  height: 125px;
+  width: 125px;
+  border-radius: 10px; 
+}
+
+/* Add some padding inside the card container */
+/*.container {
+  padding: 2px 16px;
+}*/
+
+/*.ItsAbout{
+  padding: 20px;
+}
+.active3{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}*/
